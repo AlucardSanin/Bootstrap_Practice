@@ -11,7 +11,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <header>
-    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+    <nav id="navbar-example2" class="navbar navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Portfolio</a>
         <ul class="nav nav-pills">
           <li class="nav-item">
@@ -34,27 +34,27 @@
         </ul>
       </nav>     
     </header>
-<body>
+<body class="container-fluid bg-secondary">
     <section id="scrollspyHeading1">
-    <div class="container-fluid p-5 bg-primary text-white text-center">
+    <div class="container-fluid p-5 mt-50 bg-primary text-white text-center">
         <h1>David & Matias</h1>
         <h2>Software Developer</h2>
         <p>I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have
             a project you need coded,  don’t hestiate to contact me.</p> 
       </div>        
-      <div class="container mt-5">
+      <div class="container mt-5 bg-secondary">
         <div class="row">
           <div class="col-sm-4">
-            <h3>Language</h3>
-            <br>   
-            <p>JavaScript</p>
-            <p>Ruby</p>
-            <p>Html</p>
-            <p>Css</p>
+            <h3>Language <span class="badge bg-secondary">New</span></h3>
+            <br>
+            <p>JavaScript </p>
+            <p>Ruby </p>
+            <p>Html </p>
+            <p>Css </p>
           </div>
           <div class="col-sm-4">
-            <h3>Frameworks</h3>
+            <h3>Frameworks<span class="badge bg-secondary">New</span></h3>
             <br>   
             <p>Bootsrap</p>
             <p>Ruby on Rails</p>
@@ -63,7 +63,7 @@
             <p>Selenium</p>
           </div>
           <div class="col-sm-4">
-            <h3>Skills</h3>
+            <h3>Skills<span class="badge bg-secondary">New</span></h3>
             <br>        
             <p>Codekit</p>
             <p>Github</p>
@@ -74,41 +74,88 @@
         </div>
       </div>
     </section>
-    <section id="scrollspyHeading2">
-        <div class="card mb-3 p-5" style="max-width: 768px";>
+    <section id="scrollspyHeading2" class="row justify-content-center">
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Project Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="card mb-3 p-5" style="max-width: 900px";>
             <img src="Images/Snapshoot Portfolio.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Project Details
+            </button>
           </div>
-          <div class="card p-5" style="max-width: 768px">
+          <div class="card p-5" style="max-width: 900px">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
             <img src="Images/Snapshoot Portfolio.jpg" class="card-img-bottom" alt="...">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Project Details
+            </button>
           </div>
-          <div class="card mb-3 p-5" style="max-width: 768px">
+          <div class="card mb-3 p-5 mt-3" style="max-width: 900px">
             <img src="Images/Snapshoot Portfolio.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Project Details
+            </button>
           </div>
-          <div class="card p-5" style="max-width: 768px">
+          <div class="card p-5" style="max-width: 900px">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
               <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
             </div>
             <img src="Images/Snapshoot Portfolio.jpg" class="card-img-bottom" alt="...">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Project Details
+            </button>
           </div>
     </section>
-    <footer>
-        
+    <section id="scrollspyHeading3">
+    <footer class="align-middle text-white ms-20" >
+      <h2>Contact Me</h2>
+      <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3" style="max-width: 768px">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3" style="max-width: 768px">
+          <label for="name" class="form-label" style="max-width: 768px">Name & LastName</label>
+          <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name">
+        </div>
+        <div class="form-check mb-3">
+        </div>
+      </form>
+      <label for="comment">Comments:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text" style="max-width: 768px"></textarea>
+      <button type="submit" class="btn btn-primary">Submit</button>
     </footer>
+    </section>
 </body>
