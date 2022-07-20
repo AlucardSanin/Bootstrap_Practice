@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<header>
+    <nav id="navbar-example2" class="navbar navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand ps-2" href="#">Portfolio</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">My Recent Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Menu</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading1">About Us</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading2">My Recent Work</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Contact Us</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>     
+    </header>
+<body class="container-fluid bg-secondary">
+    <section id="scrollspyHeading1">
+    <div class=" p-5 mt-3 bg-primary text-white text-center">
+        <h1 class="display-1">David & Matias</h1></br>
+        <h2>Software Developer</h2></br>
+        <p class="h5">I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have
+            a project you need coded,  don’t hestiate to contact me.</p> 
+      </div>        
+      <div class="container m-5 mx-auto text-center">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2>Language <span class="badge">New</span></h2>
+            <br>
+            <p class="h4">JavaScript </p>
+            <p class="h4">Ruby </p>
+            <p class="h4">Html </p>
+            <p class="h4">Css </p>
+          </div>
+          <div class="col-sm-4">
+            <h2>Frameworks<span class="badge">New</span></h2>
+            <br>   
+            <p class="h4">Bootsrap</p>
+            <p class="h4">Ruby on Rails</p>
+            <p class="h4">RSPec</p>
+            <p class="h4">CapyBara</p>
+            <p class="h4">Selenium</p>
+          </div>
+          <div class="col-sm-4">
+            <h2>Skills<span class="badge">New</span></h2>
+            <br>        
+            <p class="h4">Codekit</p>
+            <p class="h4">Github</p>
+            <p class="h4">CodePen</p>
+            <p class="h4">Gitlab</p>
+            <p class="h4">Terminal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="scrollspyHeading2" class="row justify-content-center">
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Project Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Understood</button>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="card mb-3 p-5" style="max-width: 1200px";>
+            <img src="Images/Snapshoot Portfolio.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Project Details
+            </button>
+          </div>
+          <div class="card p-5" style="max-width: 1200px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="Images/Snapshoot Portfolio.jpg" class="card-img-bottom" alt="...">
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Project Details
+            </button>
+          </div>
+          <div class="card mb-3 p-5 mt-3" style="max-width: 1200px">
+            <img src="Images/Snapshoot Portfolio.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Project Details
+            </button>
+          </div>
+          <div class="card p-5" style="max-width: 1200px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+            <img src="Images/Snapshoot Portfolio.jpg" class="card-img-bottom" alt="...">
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Project Details
+            </button>
+          </div>
+    </section>
+    <section id="scrollspyHeading3" class="pt-5 pb-3">
+    <footer class="mx-auto text-center text-white">
+      <h2>Contact Me</h2>
+      <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+      <form action="/action_page.php">
+        <div class="mb-3 mt-3 mx-auto" style="max-width: 400px" >
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        <div class="mb-3 mx-auto" style="max-width: 400px">
+          <label for="name" class="form-label">Name & LastName</label>
+          <input type="name" class="form-control" id="name" placeholder="Enter Name" name="name">
+        </div>
+        <div class="form-check mb-3">
+        </div>
+      </form>
+      <label for="comment">Comments:</label>
+      <textarea class="form-control mx-auto" rows="5" id="comment" name="text" style="max-width: 400px"></textarea>
+      <button type="submit" class="btn btn-primary m-3">Submit</button>
+    </footer>
+    </section>
+</body>
